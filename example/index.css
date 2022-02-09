@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import '~modern-normalize';
+
+:root {
+  --color-text: hsl(209, 33%, 12%);
+  --color-background: hsl(0, 0%, 100%);
+  --color-neutral: hsl(0, 0%, 40%);
+  --color-primary: hsl(223, 87%, 63%);
+  --color-secondary: hsl(223, 100%, 88%);
+  --font-primary: 'Roboto';
+  --font-secondary: 'Roboto';
+  --font-regular: 400;
+  --font-bold: 700;
+  --font-xs: 1.2rem;
+  --font-s: 1.6rem;
+  --font-m: 2rem;
+  --font-l: 3rem;
+  --font-xl: 4rem;
+  --font-xxl: 6rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-weight: var(--font-regular);
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-size: var(--font-xs);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-regular);
+  font-weight: var(--font-bold);
+}
+
+img {
+  max-width: 100%;
+}

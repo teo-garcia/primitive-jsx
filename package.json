@@ -1,0 +1,82 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "dev:lib": "tsdx watch",
+    "build:lib": "tsdx build",
+    "test:lib": "tsdx test --passWithNoTests",
+    "lint:lib": "tsdx lint",
+    "prepare:lib": "tsdx build",
+    "size:lib": "size-limit",
+    "analyze:lib": "size-limit --why",
+    "dev:sb": "start-storybook -p 6006",
+    "build:sb": "build-storybook"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "name": "primitivex",
+  "author": "teo-garcia",
+  "module": "dist/primitivex.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/primitivex.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/primitivex.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "@storybook/addon-essentials": "^6.4.18",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-links": "^6.4.18",
+    "@storybook/addons": "^6.4.18",
+    "@storybook/react": "^6.4.18",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.3",
+    "cssnano": "^5.0.17",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-storybook": "^0.5.6",
+    "eslint-plugin-testing-library": "^5.0.5",
+    "husky": "^7.0.4",
+    "identity-obj-proxy": "^3.0.0",
+    "postcss": "^8.4.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
+    "rollup-plugin-postcss": "^4.0.2",
+    "size-limit": "^7.0.8",
+    "storybook-css-modules-preset": "^1.1.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1"
+  }
+}
