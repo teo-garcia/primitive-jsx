@@ -5,13 +5,11 @@ exports[`<Layout /> tests Should match with the component snapshot 1`] = `
   <div
     class="layout"
   >
-    <header />
     <main
       class="main"
     >
       Hello World
     </main>
-    <footer />
   </div>
 </DocumentFragment>
 `;
