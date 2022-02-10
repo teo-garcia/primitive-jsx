@@ -3,12 +3,12 @@ import * as React from 'react';
 import { LayoutProps } from '../../utils/types';
 
 function Layout(props: LayoutProps) {
-  const { children } = props;
+  const { children, nav, footer } = props;
   return (
     <div className={styles.layout}>
-      <header />
+      {nav ? nav : null}
       <main className={styles.main}>{children}</main>
-      <footer />
+      {footer ? footer : null}
     </div>
   );
 }

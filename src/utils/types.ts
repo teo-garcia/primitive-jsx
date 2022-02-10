@@ -7,7 +7,10 @@ type Theme = {
 
 /* Components Props */
 export type GlobalProps = React.PropsWithChildren<{}>;
-export type LayoutProps = React.PropsWithChildren<{}>;
+export type LayoutProps = React.PropsWithChildren<{
+  nav?: React.ReactNode;
+  footer?: React.ReactNode;
+}>;
 export type TypographyProps = React.HTMLAttributes<HTMLOrSVGElement> & {
   color?: Theme['colors'];
   fontType?: Theme['fontTypes'];
