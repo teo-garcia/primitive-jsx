@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { GlobalProps } from '../../utils/types';
+import type { GlobalProps } from '../../utils/types';
 
 function Global(props: GlobalProps) {
   const { children } = props;
-  return <React.Fragment>{children}</React.Fragment>;
+  return <>{children}</>;
 }
 
-export { Global };
+export default Global;

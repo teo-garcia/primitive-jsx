@@ -1,16 +1,17 @@
-import styles from './Layout.module.css';
 import * as React from 'react';
-import { LayoutProps } from '../../utils/types';
+import * as styles from './Layout.module.css';
+import Box from '../Box/Box';
+import type { LayoutProps } from '../../utils/types';
 
 function Layout(props: LayoutProps) {
-  const { children, nav, footer } = props;
+  const { children, nav = null, footer = null } = props;
   return (
-    <div className={styles.layout}>
-      {nav ? nav : null}
+    <Box className={styles.layout}>
+      {nav}
       <main className={styles.main}>{children}</main>
-      {footer ? footer : null}
-    </div>
+      {footer}
+    </Box>
   );
 }
 
-export { Layout };
+export default Layout;

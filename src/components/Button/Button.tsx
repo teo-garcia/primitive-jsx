@@ -1,30 +1,31 @@
 import * as React from 'react';
-import styles from './Button.module.css';
+import * as styles from './Button.module.css';
 import classNames from 'classnames';
-import { ButtonProps } from '../../utils/types';
+import type { ButtonProps } from '../../utils/types';
 
 function Button(props: ButtonProps) {
   const {
     className,
     background = 'primary',
     color = 'background',
-    fontType = 'primary',
-    fontWeight = 'regular',
+    family = 'primary',
+    weight = 'regular',
+    ...rest
   } = props;
 
   return (
     <button
       className={classNames(
         styles.button,
-        styles[`font-${fontWeight}`],
-        styles[`font-${fontType}`],
+        styles[`font-${family}`],
+        styles[`font-${weight}`],
         styles[`color-${color}`],
         styles[`background-${background}`],
         className
       )}
-      {...props}
+      {...rest}
     />
   );
 }
 
-export { Button };
+export default Button;

@@ -7,7 +7,6 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:testing-library/react',
-    'plugin:storybook/recommended',
     'prettier',
   ],
   env: {

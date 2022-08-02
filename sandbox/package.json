@@ -1,0 +1,22 @@
+{
+  "name": "sandbox",
+  "author": "teo-garcia",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel -p 3000",
+    "build": "parcel build"
+  },
+  "alias": {
+    "react": "../node_modules/react",
+    "@types/react": "../node_modules/@types/react",
+    "@types/react-dom": "../node_modules/@types/react-dom"
+  },
+  "dependencies": {
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  }
+}

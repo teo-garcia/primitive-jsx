@@ -1,26 +1,25 @@
-import styles from './Typography.module.css';
-import * as React from 'react';
-import { TypographyProps } from '../../utils/types';
+import * as React from 'react'
+import * as styles from './Typography.module.css';
 import classNames from 'classnames';
+import type { TypographyProps } from '../../utils/types';
 
 function Typography(props: TypographyProps) {
   const {
-    tagName = 'p',
     className,
-    fontWeight = 'regular',
     color = 'text',
-    fontType = 'primary',
+    family = 'primary',
+    tagName = 'p',
+    weight = 'regular',
     ...rest
   } = props;
   const Tag = tagName as keyof JSX.IntrinsicElements;
-
   return (
     <Tag
       className={classNames(
         'typography',
-        styles[`font-${fontWeight}`],
-        styles[`font-${fontType}`],
         styles[`color-${color}`],
+        styles[`font-${family}`],
+        styles[`font-${weight}`],
         className
       )}
       {...rest}
@@ -28,4 +27,4 @@ function Typography(props: TypographyProps) {
   );
 }
 
-export { Typography };
+export default Typography

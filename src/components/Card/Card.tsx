@@ -1,7 +1,7 @@
-import styles from './Card.module.css';
 import * as React from 'react';
+import * as styles from './Card.module.css';
 import classNames from 'classnames';
-import { CardProps } from '../../utils/types';
+import type { CardProps }  from '../../utils/types';
 
 function Card(props: CardProps) {
   const { children, className, ...rest } = props;
@@ -12,4 +12,4 @@ function Card(props: CardProps) {
   );
 }
 
-export { Card };
+export default Card ;
