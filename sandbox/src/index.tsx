@@ -1,7 +1,7 @@
 import './index.css';
 import * as React from 'react';
 import { createRoot } from 'react-dom/client';
-import { Typography } from 'primitivex';
+import { Box, Typography } from '../../dist';
 
 const root = createRoot(document.getElementById('root')!);
 
@@ -13,8 +13,10 @@ root.render(
 
 function App() {
   return (
-    <Typography weight="bold" color="primary">
-      Hello
-    </Typography>
+    <Box tag="main">
+      <Typography tag="h1" weight="bold" color="background">
+        Primitivex 1 is live
+      </Typography>
+    </Box>
   );
 }

@@ -6,4 +6,4 @@ function Global(props: GlobalProps) {
   return <>{children}</>;
 }
 
-export default Global;
+export { Global };

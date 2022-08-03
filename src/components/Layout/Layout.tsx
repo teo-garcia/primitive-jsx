@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as styles from './Layout.module.css';
-import Box from '../Box/Box';
+import { Box } from '../Box/Box';
 import type { LayoutProps } from '../../utils/types';
 
 function Layout(props: LayoutProps) {
@@ -14,4 +14,4 @@ function Layout(props: LayoutProps) {
   );
 }
 
-export default Layout;
+export { Layout };

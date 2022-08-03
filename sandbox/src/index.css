@@ -4,8 +4,8 @@
   --color-text:  #000000;
   --color-background:  #FFFFFF;
   --color-neutral: #BEBEBE;
-  --color-primary: #6200EA;
-  --color-secondary: #7C4DFF;
+  --color-primary: #F6AE2D;
+  --color-secondary: #F26419;
   --font-primary: 'Ubuntu';
   --font-secondary: 'Ubuntu';
   --font-regular: 400;
@@ -67,6 +67,27 @@ button {
   border: none;
 }
 
-p {
-  font-size: 64px;
+
+main {
+  background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 100px;
+  animation: fadeIn 750ms ease-out forwards
+}
+
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(100vh);
+  }
+
+  top {
+    transform: translateY(0);
+  }
 }

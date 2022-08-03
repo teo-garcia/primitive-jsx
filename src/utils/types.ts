@@ -15,7 +15,7 @@ export type TypographyProps = React.HTMLAttributes<HTMLOrSVGElement> & {
   color?: Theme['colors'];
   family?: Theme['fontFamilies'];
   weight?: Theme['fontWeights'];
-  tagName?: 'p' | 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+  tag?: 'p' | 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 };
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   background?: Theme['colors'];
@@ -26,7 +26,7 @@ export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 export type FieldProps = React.InputHTMLAttributes<HTMLInputElement>;
 export type CardProps = React.LiHTMLAttributes<HTMLLIElement>;
 export type BoxProps = React.HTMLAttributes<HTMLOrSVGElement> & {
-  tagName?: 'div' | 'article' | 'section' | 'aside';
+  tag?: 'div' | 'main' | 'article' | 'section' | 'aside';
 };
 
 /*

@@ -1,20 +1,22 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "primitivex",
   "author": "teo-garcia",
   "license": "MIT",
   "isLibrary": true,
   "source": "src/index.tsx",
   "main": "dist/index.js",
-  "module": "dist/index.es6.js",
+  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "engines": {
     "node": ">= 15"
   },
   "scripts": {
-    "dev": "parcel watch",
-    "build": "parcel build",
-    "test": "jest --passWithNoTests",
+    "dev:lib": "parcel watch",
+    "build:lib": "parcel build",
+    "dev:sandbox": "cd sandbox && parcel -p 3000",
+    "build:sandbox": "cd sandbox && parcel",
+    "test:lib": "jest --passWithNoTests",
     "lint:lib": "tsdx lint",
     "prepare:lib": "tsdx build",
     "size:lib": "size-limit",
@@ -23,8 +25,8 @@
     "build:sb": "build-storybook"
   },
   "devDependencies": {
-    "@parcel/packager-ts": "2.6.2",
-    "@parcel/transformer-typescript-types": "2.6.2",
+    "@parcel/packager-ts": "^2.7.0",
+    "@parcel/transformer-typescript-types": "^2.7.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.4.0",
@@ -45,6 +47,7 @@
   },
   "dependencies": {
     "classnames": "^2.3.1",
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

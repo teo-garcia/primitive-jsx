@@ -2,9 +2,9 @@ import * as React from 'react';
 import type { BoxProps } from '../../utils/types';
 
 function Box(props: BoxProps) {
-  const { tagName = 'div' } = props;
-  const Tag = tagName as keyof JSX.IntrinsicElements;
-  return <Tag {...props} />;
+  const { tag = 'div', ...rest } = props;
+  const Tag = tag as keyof JSX.IntrinsicElements;
+  return <Tag {...rest} />;
 }
 
-export default Box
+export { Box };

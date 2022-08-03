@@ -25,4 +25,4 @@ function Seo(props: SeoProps) {
   );
 }
 
-export default Seo
+export { Seo };

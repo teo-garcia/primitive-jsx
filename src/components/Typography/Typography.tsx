@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 import * as styles from './Typography.module.css';
 import classNames from 'classnames';
 import type { TypographyProps } from '../../utils/types';
@@ -8,11 +8,11 @@ function Typography(props: TypographyProps) {
     className,
     color = 'text',
     family = 'primary',
-    tagName = 'p',
+    tag = 'p',
     weight = 'regular',
     ...rest
   } = props;
-  const Tag = tagName as keyof JSX.IntrinsicElements;
+  const Tag = tag as keyof JSX.IntrinsicElements;
   return (
     <Tag
       className={classNames(
@@ -22,9 +22,10 @@ function Typography(props: TypographyProps) {
         styles[`font-${weight}`],
         className
       )}
+      onClick={() => alert('Hello')}
       {...rest}
     />
   );
 }
 
-export default Typography
+export { Typography };
