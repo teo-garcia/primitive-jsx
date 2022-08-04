@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as styles from './Typography.module.css';
 import classNames from 'classnames';
 import type { TypographyProps } from '../../utils/types';
 
@@ -17,12 +16,11 @@ function Typography(props: TypographyProps) {
     <Tag
       className={classNames(
         'typography',
-        styles[`color-${color}`],
-        styles[`font-${family}`],
-        styles[`font-${weight}`],
+        `color-${color}`,
+        `font-${family}`,
+        `font-${weight}`,
         className
       )}
-      onClick={() => alert('Hello')}
       {...rest}
     />
   );

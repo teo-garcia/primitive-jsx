@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as styles from './Button.module.css';
 import classNames from 'classnames';
 import type { ButtonProps } from '../../utils/types';
 
@@ -16,11 +15,11 @@ function Button(props: ButtonProps) {
   return (
     <button
       className={classNames(
-        styles.button,
-        styles[`font-${family}`],
-        styles[`font-${weight}`],
-        styles[`color-${color}`],
-        styles[`background-${background}`],
+        'button',
+        `font-${family}`,
+        `font-${weight}`,
+        `color-${color}`,
+        `background-${background}`,
         className
       )}
       {...rest}
