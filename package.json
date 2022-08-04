@@ -1,21 +1,28 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.5",
   "name": "primitivex",
   "author": "teo-garcia",
   "license": "MIT",
   "isLibrary": true,
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "engines": {
-    "node": ">= 15"
-  },
+  "main": "dist/primitivex.cjs.js",
+  "css": "dist/primitivex.css",
+  "types": "dist/primitivex.d.ts",
   "targets": {
     "main": {
-      "source": "src/index.tsx"
+      "source": "src/index.tsx",
+      "isLibrary": true
+    },
+    "types": {
+      "source": "src/index.tsx",
+      "isLibrary": true
     },
     "css": {
-      "source": "src/index.css"
+      "source": "src/index.css",
+      "isLibrary": true
     }
+  },
+  "engines": {
+    "node": ">= 15"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
