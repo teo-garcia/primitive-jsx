@@ -1,6 +1,6 @@
 /* Theming */
 type Theme = {
-  colors: 'background' | 'text' | 'primary' | 'secondary';
+  colors: 'background' | 'text' | 'primary' | 'secondary' | 'transparent';
   fontFamilies: 'primary' | 'secondary';
   fontWeights: 'regular' | 'bold';
 };

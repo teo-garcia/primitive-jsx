@@ -1,7 +1,7 @@
 @import 'components/Button/Button.css';
 @import 'components/Card/Card.css';
 @import 'components/Layout/Layout.css';
-@import 'components/Typography/Typography.css';
+@import 'components/TextField/TextField.css';
 
 .font-primary {
   font-weight: var(--font-primary);
@@ -35,6 +35,10 @@
   color: var(--color-secondary);
 }
 
+.color-neutral {
+  color: var(--color-neutral);
+}
+
 .background-background {
   background-color: var(--color-background);
 }
@@ -49,4 +53,8 @@
 
 .background-secondary {
   background-color: var(--color-secondary);
+}
+
+.background-neutral {
+  background-color: var(--color-neutral);
 }
