@@ -19,6 +19,10 @@
   font-weight: var(--font-bold);
 }
 
+.color-transparent {
+  color: transparent;
+}
+
 .color-background {
   color: var(--color-background);
 }
@@ -37,6 +41,11 @@
 
 .color-neutral {
   color: var(--color-neutral);
+}
+
+
+.background-transparent {
+  background-color: transparent;
 }
 
 .background-background {

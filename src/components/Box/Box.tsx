@@ -14,7 +14,7 @@ function Box(props: BoxProps) {
   return (
     <Tag
       className={classNames(
-        'typography',
+        'box',
         `color-${color}`,
         `background-${color}`,
         className
