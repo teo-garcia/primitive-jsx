@@ -1,7 +1,8 @@
 import './index.css';
+import '../../dist/primitivex.css';
 import * as React from 'react';
 import { createRoot } from 'react-dom/client';
-import { Box, Typography } from '../../dist';
+import { Box, Typography } from 'primitivex';
 
 const root = createRoot(document.getElementById('root')!);
 

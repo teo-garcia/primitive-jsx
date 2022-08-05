@@ -1,0 +1,27 @@
+.label {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  gap: 4px 0;
+  font-size: var(--font-s);
+  font-weight: var(--font-bold);
+  color: var(--color-primary);
+  width: 100%
+}
+
+.input, .textarea {
+  border-radius: 8px;
+  font-weight: var(--font-regular);
+  border: 1px solid var(--color-primary);
+  font-size: var(--font-s);
+  padding: 4px 8px;
+  width: 100%;
+}
+
+.input:focus, .textarea:focus {
+  outline: 2px solid var(--color-secondary);
+}
+
+.textarea {
+  min-height: 100px;
+}

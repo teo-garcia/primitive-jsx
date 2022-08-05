@@ -26,8 +26,16 @@ export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 export type FieldProps = React.InputHTMLAttributes<HTMLInputElement>;
 export type CardProps = React.LiHTMLAttributes<HTMLLIElement>;
 export type BoxProps = React.HTMLAttributes<HTMLOrSVGElement> & {
-  tag?: 'div' | 'main' | 'article' | 'section' | 'aside';
+  tag?: 'div' | 'main' | 'article' | 'section' | 'aside' | 'nav' | 'footer';
+  background?: Theme['colors'];
+  color?: Theme['colors'];
 };
+
+export type TextFieldProps = React.PropsWithChildren<{
+  tag?: 'input' | 'textarea';
+}> &
+  React.InputHTMLAttributes<HTMLInputElement> &
+  React.TextareaHTMLAttributes<HTMLTextAreaElement>;
 
 /*
   FIXME: Add the correct component type
