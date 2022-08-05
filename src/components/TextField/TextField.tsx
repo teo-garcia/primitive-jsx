@@ -11,7 +11,7 @@ function TextField(props: TextFieldProps) {
       {tag === 'input' ? (
         <input type="text" className="input" {...rest} />
       ) : (
-        <textarea className="styles.textarea" {...rest} />
+        <textarea className="textarea" {...rest} />
       )}
     </label>
   );
