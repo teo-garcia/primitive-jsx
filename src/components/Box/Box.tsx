@@ -16,7 +16,7 @@ function Box(props: BoxProps) {
       className={classNames(
         'box',
         `color-${color}`,
-        `background-${color}`,
+        `background-${background}`,
         className
       )}
       {...rest}
