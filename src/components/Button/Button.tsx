@@ -1,8 +1,8 @@
-import * as React from 'react';
-import classNames from 'classnames';
-import type { ButtonProps } from '../../utils/types';
+import * as React from 'react'
+import classNames from 'classnames'
+import type { ButtonProps } from '../../utils/types'
 
-function Button(props: ButtonProps) {
+const Button = (props: ButtonProps) => {
   const {
     className,
     background = 'primary',
@@ -10,7 +10,7 @@ function Button(props: ButtonProps) {
     family = 'primary',
     weight = 'regular',
     ...rest
-  } = props;
+  } = props
 
   return (
     <button
@@ -24,7 +24,7 @@ function Button(props: ButtonProps) {
       )}
       {...rest}
     />
-  );
+  )
 }
 
-export { Button };
+export { Button }

@@ -1,5 +1,5 @@
-import * as React from 'react';
-import type { SeoProps } from '../../utils/types';
+import * as React from 'react'
+import type { SeoProps } from '../../utils/types'
 
 function Seo(props: SeoProps) {
   const {
@@ -9,7 +9,7 @@ function Seo(props: SeoProps) {
     ogDescription = '',
     ogImage = '',
     component: HeadComponent,
-  } = props;
+  } = props
   return (
     <React.Fragment>
       <HeadComponent>
@@ -22,7 +22,7 @@ function Seo(props: SeoProps) {
         <meta property="og:image" content={ogImage} />
       </HeadComponent>
     </React.Fragment>
-  );
+  )
 }
 
-export { Seo };
+export { Seo }

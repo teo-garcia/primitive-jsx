@@ -6,10 +6,11 @@
   font-size: var(--font-s);
   font-weight: var(--font-bold);
   color: var(--color-primary);
-  width: 100%
+  width: 100%;
 }
 
-.input, .textarea {
+.input,
+.textarea {
   border-radius: 8px;
   font-weight: var(--font-regular);
   border: 1px solid var(--color-primary);
@@ -18,10 +19,11 @@
   width: 100%;
 }
 
-.input:focus, .textarea:focus {
-  outline: 2px solid var(--color-secondary);
-}
-
 .textarea {
   min-height: 100px;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: 2px solid var(--color-secondary);
 }

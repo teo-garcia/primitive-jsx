@@ -1,16 +1,16 @@
-import * as React from 'react';
-import classNames from 'classnames';
-import type { BoxProps } from '../../utils/types';
+import * as React from 'react'
+import classNames from 'classnames'
+import type { BoxProps } from '../../utils/types'
 
-function Box(props: BoxProps) {
+const Box = (props: BoxProps) => {
   const {
     tag = 'div',
     className,
     background = 'transparent',
     color = 'text',
     ...rest
-  } = props;
-  const Tag = tag as keyof JSX.IntrinsicElements;
+  } = props
+  const Tag = tag as keyof JSX.IntrinsicElements
   return (
     <Tag
       className={classNames(
@@ -21,7 +21,7 @@ function Box(props: BoxProps) {
       )}
       {...rest}
     />
-  );
+  )
 }
 
-export { Box };
+export { Box }

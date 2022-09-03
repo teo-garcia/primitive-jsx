@@ -1,8 +1,8 @@
-import * as React from 'react';
-import classNames from 'classnames';
-import type { TypographyProps } from '../../utils/types';
+import * as React from 'react'
+import classNames from 'classnames'
+import type { TypographyProps } from '../../utils/types'
 
-function Typography(props: TypographyProps) {
+const Typography = (props: TypographyProps) => {
   const {
     className,
     color = 'text',
@@ -10,8 +10,8 @@ function Typography(props: TypographyProps) {
     tag = 'p',
     weight = 'regular',
     ...rest
-  } = props;
-  const Tag = tag as keyof JSX.IntrinsicElements;
+  } = props
+  const Tag = tag as keyof JSX.IntrinsicElements
   return (
     <Tag
       className={classNames(
@@ -23,7 +23,7 @@ function Typography(props: TypographyProps) {
       )}
       {...rest}
     />
-  );
+  )
 }
 
-export { Typography };
+export { Typography }

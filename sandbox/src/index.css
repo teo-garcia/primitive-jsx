@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
 :root {
-  --color-text:  #000000;
-  --color-background:  #FFFFFF;
-  --color-neutral: #BEBEBE;
-  --color-primary: #F6AE2D;
-  --color-secondary: #F26419;
+  --color-text: #000000;
+  --color-background: #ffffff;
+  --color-neutral: #bebebe;
+  --color-primary: #f6ae2d;
+  --color-secondary: #f26419;
   --font-primary: 'Ubuntu';
   --font-secondary: 'Ubuntu';
   --font-regular: 400;
@@ -30,7 +30,8 @@ html {
   font-size: 10px;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -54,12 +55,19 @@ h6 {
   color: var(--color-primary);
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -67,9 +75,12 @@ button {
   border: none;
 }
 
-
 main {
-  background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+  background: linear-gradient(
+    45deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -78,9 +89,8 @@ main {
 
 h1 {
   font-size: 100px;
-  animation: fadeIn 750ms ease-out forwards
+  animation: fadeIn 750ms ease-out forwards;
 }
-
 
 @keyframes fadeIn {
   from {

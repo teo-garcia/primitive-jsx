@@ -1,14 +1,11 @@
-import * as React from 'react';
-import classNames from 'classnames';
-import type { CardProps } from '../../utils/types';
+import * as React from 'react'
+import classNames from 'classnames'
+import { Box } from '../Box/Box'
+import type { CardProps } from '../../utils/types'
 
-function Card(props: CardProps) {
-  const { children, className, ...rest } = props;
-  return (
-    <li className={classNames('card', className)} {...rest}>
-      {children}
-    </li>
-  );
+const Card = (props: CardProps) => {
+  const { className, ...rest } = props
+  return <Box className={classNames('card', className)} {...rest} />
 }
 
-export { Card };
+export { Card }

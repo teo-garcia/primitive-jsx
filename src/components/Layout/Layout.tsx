@@ -1,16 +1,17 @@
-import * as React from 'react';
-import { Box } from '../Box/Box';
-import type { LayoutProps } from '../../utils/types';
+import * as React from 'react'
+import classNames from 'classnames'
+import type { LayoutProps } from '../../utils/types'
+import { Box } from '../Box/Box'
 
-function Layout(props: LayoutProps) {
-  const { children, nav = null, footer = null } = props;
+const Layout = (props: LayoutProps) => {
+  const { children, nav = null, footer = null, className, ...rest } = props
   return (
-    <Box className="layout">
+    <Box className={(classNames('layout'), className)} {...rest}>
       {nav}
       <main className="main">{children}</main>
       {footer}
     </Box>
-  );
+  )
 }
 
-export { Layout };
+export { Layout }

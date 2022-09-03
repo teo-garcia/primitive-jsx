@@ -1,10 +1,9 @@
-import classNames from 'classnames';
-import * as React from 'react';
+import * as React from 'react'
+import classNames from 'classnames'
+import type { TextFieldProps } from '../../utils/types'
 
-import { TextFieldProps } from '../../utils/types';
-
-function TextField(props: TextFieldProps) {
-  const { children, tag = 'input', className, ...rest } = props;
+const TextField = (props: TextFieldProps) => {
+  const { children, tag = 'input', className, ...rest } = props
   return (
     <label className={classNames('label', className)}>
       {children}
@@ -14,7 +13,7 @@ function TextField(props: TextFieldProps) {
         <textarea className="textarea" {...rest} />
       )}
     </label>
-  );
+  )
 }
 
-export { TextField };
+export { TextField }
