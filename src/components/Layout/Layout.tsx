@@ -6,7 +6,7 @@ import { Box } from '../Box/Box'
 const Layout = (props: LayoutProps) => {
   const { children, nav = null, footer = null, className, ...rest } = props
   return (
-    <Box className={(classNames('layout'), className)} {...rest}>
+    <Box className={classNames('layout', className)} {...rest}>
       {nav}
       <main className="main">{children}</main>
       {footer}
