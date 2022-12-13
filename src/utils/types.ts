@@ -12,7 +12,7 @@ export type LayoutProps = React.PropsWithChildren<
     footer?: React.ReactNode | null
   } & BoxProps
 >
-export type TypographyProps = React.HTMLAttributes<HTMLOrSVGElement> & {
+export type TextProps = React.HTMLAttributes<HTMLOrSVGElement> & {
   color?: Theme['colors']
   family?: Theme['fontFamilies']
   weight?: Theme['fontWeights']

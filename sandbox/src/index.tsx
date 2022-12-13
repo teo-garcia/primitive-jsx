@@ -1,10 +1,10 @@
 import './index.css'
-import '../../dist/primitivex.css'
+import '../../src/index.css'
 import * as React from 'react'
 import { createRoot } from 'react-dom/client'
-import { Box, Typography } from 'primitivex'
+import { Box, Text } from '../../'
 
-const root = createRoot(document.getElementById('root')!)
+const root = createRoot(document.getElementById('root') as HTMLElement)
 
 root.render(
   <React.StrictMode>
@@ -15,9 +15,9 @@ root.render(
 function App() {
   return (
     <Box tag="main">
-      <Typography tag="h1" weight="bold" color="background">
+      <Text tag="h1" weight="bold" color="background">
         Primitivex 1 is live
-      </Typography>
+      </Text>
     </Box>
   )
 }

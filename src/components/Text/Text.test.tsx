@@ -1,15 +1,15 @@
 import * as React from 'react'
 import { render, screen } from '@testing-library/react'
-import { Typography } from './Typography'
+import { Text } from './Text'
 
-describe('<Typography /> tests', function () {
+describe('<Text /> tests', function () {
   test('Should render the provided children prop', function () {
-    render(<Typography>Hello World</Typography>)
+    render(<Text>Hello World</Text>)
     expect(screen.getByText(/Hello World/i)).toBeInTheDocument()
   })
 
   test('Should render the provided tagName prop', function () {
-    render(<Typography tag="h1">Hello World</Typography>)
+    render(<Text tag="h1">Hello World</Text>)
     expect(screen.getByText(/Hello World/i).tagName).toBe('H1')
   })
 })

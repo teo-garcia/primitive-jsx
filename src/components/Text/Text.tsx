@@ -1,8 +1,8 @@
 import * as React from 'react'
 import classNames from 'classnames'
-import type { TypographyProps } from '../../utils/types'
+import type { TextProps } from '../../utils/types'
 
-const Typography = (props: TypographyProps) => {
+const Text = (props: TextProps) => {
   const {
     className,
     color = 'text',
@@ -15,7 +15,7 @@ const Typography = (props: TypographyProps) => {
   return (
     <Tag
       className={classNames(
-        'typography',
+        'Text',
         `color-${color}`,
         `font-${family}`,
         `font-${weight}`,
@@ -26,4 +26,4 @@ const Typography = (props: TypographyProps) => {
   )
 }
 
-export { Typography }
+export { Text }
