@@ -1,6 +1,6 @@
 import * as React from 'react'
 import classNames from 'classnames'
-import type { BoxProps } from '../../utils/types'
+import type { BoxProps } from '@lib/types'
 
 const Box = (props: BoxProps) => {
   const {

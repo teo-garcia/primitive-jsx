@@ -1,0 +1,9 @@
+[
+  {
+    "path": [
+      "dist/primitive-jsx.*.js",
+      "dist/primitive-jsx.css"
+    ],
+    "limit": "2kB"
+  }
+]

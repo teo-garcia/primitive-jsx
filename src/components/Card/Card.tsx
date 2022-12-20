@@ -1,7 +1,7 @@
 import * as React from 'react'
 import classNames from 'classnames'
-import { Box } from '../Box/Box'
-import type { CardProps } from '../../utils/types'
+import type { CardProps } from '@lib/types'
+import { Box } from '@components/Box/Box'
 
 const Card = (props: CardProps) => {
   const { className, ...rest } = props

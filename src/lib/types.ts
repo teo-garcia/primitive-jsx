@@ -42,6 +42,7 @@ export type BoxProps = React.HTMLAttributes<HTMLOrSVGElement> & {
 
 export type TextFieldProps = React.PropsWithChildren<{
   tag?: 'input' | 'textarea'
+  testId?: string
 }> &
   React.InputHTMLAttributes<HTMLInputElement> &
   React.TextareaHTMLAttributes<HTMLTextAreaElement>

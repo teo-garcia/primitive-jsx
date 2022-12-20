@@ -7,4 +7,23 @@ describe('<Layout /> tests', function () {
     render(<Layout>Hello World</Layout>)
     expect(screen.getByText(/Hello World/i)).toBeInTheDocument()
   })
+
+  test('Should render provided className prop', function () {
+    render(
+      <Layout className="wrapper" data-testid="wrapper">
+        Hello World
+      </Layout>
+    )
+    expect(screen.getByTestId('wrapper')).toHaveClass('wrapper')
+  })
+
+  test('Should contain a nav and footer elements if provided', () => {
+    render(
+      <Layout nav={<nav />} footer={<footer />}>
+        Hello World
+      </Layout>
+    )
+    expect(screen.getByRole('navigation')).toBeInTheDocument()
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
+  })
 })

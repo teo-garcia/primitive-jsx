@@ -34,7 +34,7 @@ import 'primitivex/dist/primitivex.css'
 ### Use the components in your project:
 
 ```tsx
-import { Layout, Seo } from 'primitive-jsx'
+import { Layout, Box } from 'primitive-jsx'
 ```
 
 ## Components
