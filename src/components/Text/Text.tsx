@@ -1,6 +1,6 @@
 import * as React from 'react'
 import classNames from 'classnames'
-import type { TextProps } from '@lib/types'
+import type { TextProps } from '../../lib/types'
 
 const Text = (props: TextProps) => {
   const {

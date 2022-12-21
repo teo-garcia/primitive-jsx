@@ -1,5 +1,5 @@
 {
-  "version": "1.2.2",
+  "version": "1.2.3",
   "name": "primitive-jsx",
   "author": "teo-garcia",
   "license": "MIT",
@@ -64,7 +64,6 @@
     "jest-environment-jsdom": "^29.3.1",
     "lint-staged": "^13.1.0",
     "parcel": "^2.8.2",
-    "parcel-resolver-tspaths": "^0.0.9",
     "prettier": "^2.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -1,19 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "help": true,
     "jsx": "react",
     "module": "commonjs",
-    "paths": {
-      "@components/*": [
-        "components/*"
-      ],
-      "@lib/*": [
-        "lib/*"
-      ]
-    },
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,

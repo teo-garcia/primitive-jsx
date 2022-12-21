@@ -4903,11 +4903,6 @@ p-try@^2.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
-parcel-resolver-tspaths@^0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/parcel-resolver-tspaths/-/parcel-resolver-tspaths-0.0.9.tgz#905578f0c3d8fe795f798452fcfbf211f021dbde"
-  integrity sha512-U+iYUT5BewncKijBFJqLMsU78SfGBEzfVZ0T9O4hw5dCedTsOJdXOmlsqBw9ipdCA55GpQFuSnIe1Xv3sF53Vg==
-
 parcel@^2.8.2:
   version "2.8.2"
   resolved "https://registry.yarnpkg.com/parcel/-/parcel-2.8.2.tgz#6539c0a435b14e5829d09254b0394dcfbc0b0ba5"

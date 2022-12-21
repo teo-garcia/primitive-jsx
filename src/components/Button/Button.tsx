@@ -1,6 +1,6 @@
 import * as React from 'react'
 import classNames from 'classnames'
-import type { ButtonProps } from '@lib/types'
+import type { ButtonProps } from '../../lib/types'
 
 const Button = (props: ButtonProps) => {
   const {
