@@ -6,7 +6,7 @@ const Box = (props: BoxProps) => {
   const {
     tag = 'div',
     className,
-    background = 'transparent',
+    background = 'unknown',
     color = 'text',
     ...rest
   } = props

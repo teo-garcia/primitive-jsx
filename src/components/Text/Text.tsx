@@ -5,10 +5,10 @@ import type { TextProps } from '../../lib/types'
 const Text = (props: TextProps) => {
   const {
     className,
-    color = 'text',
-    family = 'primary',
+    color = 'unknown',
+    family = 'unknown',
     tag = 'p',
-    weight = 'regular',
+    weight = 'unknown',
     ...rest
   } = props
   const Tag = tag as keyof JSX.IntrinsicElements

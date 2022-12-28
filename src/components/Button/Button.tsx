@@ -5,10 +5,10 @@ import type { ButtonProps } from '../../lib/types'
 const Button = (props: ButtonProps) => {
   const {
     className,
-    background = 'primary',
-    color = 'background',
-    family = 'primary',
-    weight = 'regular',
+    background = 'unknown',
+    color = 'unknown',
+    family = 'unknown',
+    weight = 'unknown',
     ...rest
   } = props
 

@@ -21,4 +21,11 @@ describe('<Button /> tests', () => {
     await user.click(screen.getByText(/hello world/i))
     expect(mockEventHandler).toHaveBeenCalled()
   })
+
+  test('Should assign default props', function () {
+    render(<Button>Hello World</Button>)
+    expect(screen.getByText(/hello world/i)).toHaveClass('color-unknown')
+    expect(screen.getByText(/hello world/i)).toHaveClass('background-unknown')
+    expect(screen.getByText(/hello world/i)).toHaveClass('font-unknown')
+  })
 })

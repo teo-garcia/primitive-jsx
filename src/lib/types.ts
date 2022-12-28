@@ -1,6 +1,6 @@
 /* Theming */
 type Theme = {
-  colors: 'background' | 'text' | 'primary' | 'secondary' | 'transparent'
+  colors: 'background' | 'text' | 'primary' | 'secondary' | 'neutral'
   fontFamilies: 'primary' | 'secondary'
   fontWeights: 'regular' | 'bold'
 }

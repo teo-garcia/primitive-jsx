@@ -6,7 +6,7 @@ import { Box } from './Box'
 describe('<Box /> tests', () => {
   test('Should render provided children prop', function () {
     render(<Box>Hello World</Box>)
-    expect(screen.getByText(/Hello World/i)).toBeInTheDocument()
+    expect(screen.getByText(/hello world/i)).toBeInTheDocument()
   })
 
   test('Should render provided className prop', function () {
@@ -31,8 +31,9 @@ describe('<Box /> tests', () => {
     expect(screen.getByText(/hello world/i).tagName).toBe('SECTION')
   })
 
-  test('Should render a div by default', () => {
-    render(<Box className="wrapper">Hello World</Box>)
+  test('Should assign default props', function () {
+    render(<Box>Hello World</Box>)
     expect(screen.getByText(/hello world/i).tagName).toBe('DIV')
+    expect(screen.getByText(/hello world/i)).toHaveClass('background-unknown')
   })
 })

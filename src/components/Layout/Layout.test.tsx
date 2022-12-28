@@ -5,7 +5,7 @@ import { Layout } from './Layout'
 describe('<Layout /> tests', function () {
   test('Should render the provided children prop', function () {
     render(<Layout>Hello World</Layout>)
-    expect(screen.getByText(/Hello World/i)).toBeInTheDocument()
+    expect(screen.getByText(/hello world/i)).toBeInTheDocument()
   })
 
   test('Should render provided className prop', function () {
