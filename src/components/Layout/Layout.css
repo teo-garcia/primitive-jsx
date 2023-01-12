@@ -5,5 +5,4 @@
 
 .main {
   grid-column: 1/ -1;
-  min-height: 100vh;
 }
